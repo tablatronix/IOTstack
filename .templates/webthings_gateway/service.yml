@@ -12,6 +12,7 @@
     volumes:
       - ./volumes/webthings_gateway/share:/home/node/.mozilla-iot
     logging:
+      driver: json-file
       options:
         max-size: "5m"
         max-file: "3"

@@ -19,6 +19,7 @@
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
     logging:
+      driver: json-file
       options:
         max-size: "5m"
         max-file: "3"
@@ -38,6 +39,7 @@
     networks:
       - nextcloud_internal
     logging:
+      driver: json-file
       options:
         max-size: "5m"
         max-file: "3"
